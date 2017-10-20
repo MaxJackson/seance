@@ -31,13 +31,13 @@
 
 {{#author}}
 <div class="teaserimage">
-    <div class="teaserimage-image" style="background-image: url({{cover_image}})">
+    <div class="teaserimage-image" style="background-image: url({{@blog.cover_image}})">
         Teaser Image
     </div>
 </div>
 
 <header class="blog-header">
-    {{#if feature_image}}<a class="blog-logo" href="#" style="background-image: url({{img_url feature_image}})">{{name}}</a>{{/if}}
+    {{#if feature_image}}<a class="blog-logo" href="#" style="background-image: url("/assets/img/seance-logo.png")">{{name}}</a>{{/if}}
     <h1 class="blog-title">{{name}}</h1>
     <h2 class="blog-description">{{bio}}</h2>
     <div class="custom-links">

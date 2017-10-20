@@ -8,7 +8,7 @@
 
 
 <div class="teaserimage">
-    <div class="teaserimage-image" {{#if @blog.cover_image}}style="background-image: url({{blog.cover_image}})"{{/if}}>
+    <div class="teaserimage-image" {{#if @blog.cover_image}}style="background-image: url({{@blog.cover_image}})"{{/if}}>
         Teaser Image
     </div>
 </div>
@@ -21,9 +21,7 @@
         <a href="https://github.com/MaxJackson" target="_blank"><i class="fa fa-github"></i></a>&nbsp;&nbsp;
         <a href="https://twitter.com/deadhorsepinata" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/max-jackson-77301125/" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;·&nbsp;&nbsp;
-        <!--
-		<a href="/aboutme">who am i</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-		-->
+		<a href="/whoami-2">who am i</a>&nbsp;&nbsp;·&nbsp;&nbsp;
 	</div>
 </header>
 
@@ -66,15 +64,13 @@
                         <section class="post-excerpt" itemprop="description">
                             <p>{{excerpt characters="130"}}&hellip;</p>
                         </section>
-                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
+                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">in {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
                     </div>
                 </article>
             {{/if}}
         {{/foreach}}
     </div>
 
-
-    <h5 class="index-headline normal"><span>Regular</span></h5>
 
     <div class="cf frame">
     {{#foreach posts}}
@@ -88,7 +84,7 @@
                     <section class="post-excerpt" itemprop="description">
                         <p>{{excerpt characters="130"}}&hellip;</p>
                     </section>
-                    <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
+                    <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">im {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
                 </div>
             </article>
         {{/if}}
