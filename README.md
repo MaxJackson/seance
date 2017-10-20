@@ -1,4 +1,4 @@
-# Seance 1.0.1
+# Seance 1.0.0
 **A Medium-inspired theme for [Ghost](https://github.com/TryGhost)**.
 
 ![seance 2.0](http://cl.ly/VBX3/seance2.jpg)

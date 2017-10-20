@@ -1,7 +1,7 @@
 {
     "name": "seance",
-    "version": "2.0.1",
-    "description": "Just a medium-like blogging platform.",
-    "author": "Sven Read",
-    "homepage": "http://www.svenread.com/seance"
+    "version": "1.0.0",
+    "description": "a medium (theme) for ghost( blog)s",
+    "author": "Max Jackson",
+    "homepage": "https://github.com/MaxJackson/seance"
 }
